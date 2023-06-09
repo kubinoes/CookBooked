@@ -15,9 +15,9 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List(recipes, id: \.self) { recipe in
+            List(recipes, id: \.id) { recipe in
                 NavigationLink {
-                    RecipeView()
+                    RecipeView(recipe: recipe)
                 } label: {
                     Text(recipe.title ?? "Unknown recipe name")
                 }
