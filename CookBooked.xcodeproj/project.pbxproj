@@ -40,6 +40,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B21D40B2A338CE800CF42D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B7E75F42A325116009B6431 /* ContentView.swift */,
+				3B549B3A2A3268D500FE4210 /* RecipeView.swift */,
+				3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B21D40C2A338CFA00CF42D6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */,
+				3B549B3C2A326A7800FE4210 /* DataController.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		3B7E75E62A325116009B6431 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				3B7E75F22A325116009B6431 /* CookBookedApp.swift */,
-				3B7E75F42A325116009B6431 /* ContentView.swift */,
-				3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */,
-				3B549B3A2A3268D500FE4210 /* RecipeView.swift */,
-				3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */,
-				3B549B3C2A326A7800FE4210 /* DataController.swift */,
+				3B21D40B2A338CE800CF42D6 /* Views */,
+				3B21D40C2A338CFA00CF42D6 /* Data */,
 				3B7E75F62A32511A009B6431 /* Assets.xcassets */,
 				3B7E75F82A32511A009B6431 /* Preview Content */,
 			);
