@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B21D40A2A338B4100CF42D6 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */; };
+		3B21D40E2A338F6700CF42D6 /* AddIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D40D2A338F6700CF42D6 /* AddIngredientsView.swift */; };
+		3B21D4102A339B0F00CF42D6 /* AddDirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D40F2A339B0F00CF42D6 /* AddDirectionsView.swift */; };
 		3B549B392A3267BD00FE4210 /* CookBooked.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */; };
 		3B549B3B2A3268D500FE4210 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B3A2A3268D500FE4210 /* RecipeView.swift */; };
 		3B549B3D2A326A7800FE4210 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B3C2A326A7800FE4210 /* DataController.swift */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
+		3B21D40D2A338F6700CF42D6 /* AddIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientsView.swift; sourceTree = "<group>"; };
+		3B21D40F2A339B0F00CF42D6 /* AddDirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDirectionsView.swift; sourceTree = "<group>"; };
 		3B549B382A3267BD00FE4210 /* CookBooked.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookBooked.xcdatamodel; sourceTree = "<group>"; };
 		3B549B3A2A3268D500FE4210 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		3B549B3C2A326A7800FE4210 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 				3B7E75F42A325116009B6431 /* ContentView.swift */,
 				3B549B3A2A3268D500FE4210 /* RecipeView.swift */,
 				3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */,
+				3B21D40D2A338F6700CF42D6 /* AddIngredientsView.swift */,
+				3B21D40F2A339B0F00CF42D6 /* AddDirectionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,9 +173,11 @@
 			files = (
 				3B549B3D2A326A7800FE4210 /* DataController.swift in Sources */,
 				3B7E75F52A325116009B6431 /* ContentView.swift in Sources */,
+				3B21D4102A339B0F00CF42D6 /* AddDirectionsView.swift in Sources */,
 				3B549B392A3267BD00FE4210 /* CookBooked.xcdatamodeld in Sources */,
 				3B21D40A2A338B4100CF42D6 /* AddRecipeView.swift in Sources */,
 				3B549B3B2A3268D500FE4210 /* RecipeView.swift in Sources */,
+				3B21D40E2A338F6700CF42D6 /* AddIngredientsView.swift in Sources */,
 				3B7E75F32A325116009B6431 /* CookBookedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

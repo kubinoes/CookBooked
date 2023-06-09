@@ -11,18 +11,30 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var recipes: FetchedResults<Recipe>
     
-    private var recipess = ["recipe1", "recioe2"]
+    @State private var showingAddRecipe = false
     
     var body: some View {
         NavigationStack {
-            List(recipess, id: \.self) { recipe in
+            List(recipes, id: \.self) { recipe in
                 NavigationLink {
                     RecipeView()
                 } label: {
-                    Text(recipe)
+                    Text(recipe.title ?? "Unknown recipe name")
                 }
             }
             .navigationTitle("Your Recipes")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingAddRecipe.toggle()
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
+        .sheet(isPresented: $showingAddRecipe) {
+            AddRecipeView()
         }
     }
 }
