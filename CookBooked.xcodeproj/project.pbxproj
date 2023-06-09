@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B21D40A2A338B4100CF42D6 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */; };
+		3B549B392A3267BD00FE4210 /* CookBooked.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */; };
+		3B549B3B2A3268D500FE4210 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B3A2A3268D500FE4210 /* RecipeView.swift */; };
+		3B549B3D2A326A7800FE4210 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B549B3C2A326A7800FE4210 /* DataController.swift */; };
 		3B7E75F32A325116009B6431 /* CookBookedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E75F22A325116009B6431 /* CookBookedApp.swift */; };
 		3B7E75F52A325116009B6431 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E75F42A325116009B6431 /* ContentView.swift */; };
 		3B7E75F72A32511A009B6431 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7E75F62A32511A009B6431 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
+		3B549B382A3267BD00FE4210 /* CookBooked.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CookBooked.xcdatamodel; sourceTree = "<group>"; };
+		3B549B3A2A3268D500FE4210 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		3B549B3C2A326A7800FE4210 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		3B7E75EF2A325116009B6431 /* CookBooked.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBooked.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7E75F22A325116009B6431 /* CookBookedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookedApp.swift; sourceTree = "<group>"; };
 		3B7E75F42A325116009B6431 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 			children = (
 				3B7E75F22A325116009B6431 /* CookBookedApp.swift */,
 				3B7E75F42A325116009B6431 /* ContentView.swift */,
+				3B21D4092A338B4100CF42D6 /* AddRecipeView.swift */,
+				3B549B3A2A3268D500FE4210 /* RecipeView.swift */,
+				3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */,
+				3B549B3C2A326A7800FE4210 /* DataController.swift */,
 				3B7E75F62A32511A009B6431 /* Assets.xcassets */,
 				3B7E75F82A32511A009B6431 /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B549B3D2A326A7800FE4210 /* DataController.swift in Sources */,
 				3B7E75F52A325116009B6431 /* ContentView.swift in Sources */,
+				3B549B392A3267BD00FE4210 /* CookBooked.xcdatamodeld in Sources */,
+				3B21D40A2A338B4100CF42D6 /* AddRecipeView.swift in Sources */,
+				3B549B3B2A3268D500FE4210 /* RecipeView.swift in Sources */,
 				3B7E75F32A325116009B6431 /* CookBookedApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +355,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3B549B372A3267BD00FE4210 /* CookBooked.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3B549B382A3267BD00FE4210 /* CookBooked.xcdatamodel */,
+			);
+			currentVersion = 3B549B382A3267BD00FE4210 /* CookBooked.xcdatamodel */;
+			path = CookBooked.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B7E75E72A325116009B6431 /* Project object */;
 }

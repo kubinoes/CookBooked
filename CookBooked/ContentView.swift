@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var recipes: FetchedResults<Recipe>
+    
+    private var recipess = ["recipe1", "recioe2"]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List(recipess, id: \.self) { recipe in
+                NavigationLink {
+                    RecipeView()
+                } label: {
+                    Text(recipe)
+                }
+            }
+            .navigationTitle("Your Recipes")
         }
+    }
+}
+
+struct RecipeName: View {
+    var body: some View {
+        ZStack {
+            Text("Pancakes")
+                .font(.largeTitle)
+                .padding()
+                .foregroundColor(.white)
+        }
+        .background(.yellow)
+        .cornerRadius(10)
         .padding()
     }
 }
