@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct RecipeView: View {
-    var recipe: Recipe
+    @ObservedObject var recipe: Recipe
     
     var body: some View {
         GeometryReader { geometry in
@@ -45,11 +46,15 @@ struct RecipeView: View {
 }
 
 struct RecipeView_Previews: PreviewProvider {
-    @Environment(\.managedObjectContext) static var moc
+    static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     
     static var previews: some View {
-        NavigationStack {
-            RecipeView(recipe: Recipe(context: moc))
-        }
+        let recipe = Recipe(context: moc)
+        recipe.id = UUID()
+        recipe.title = "Test Recipe"
+        recipe.ingredients = ["salt", "sugar"]
+        recipe.directions = ["first", "second"]
+        
+        return RecipeView(recipe: recipe)
     }
 }

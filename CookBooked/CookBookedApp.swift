@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct CookBookedApp: App {
-    @StateObject private var dataController = DataController()
+    private let mainContext = DataController.shared.mainContext
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environment(\.managedObjectContext, mainContext)
         }
     }
 }
